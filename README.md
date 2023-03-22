@@ -16,12 +16,19 @@ The script will then print out the titles of any attachments in the specified em
 Note: This script currently only works on Windows machines with Microsoft Outlook installed and configured.
 
 ### Explanation of Code
-The OutlookEmail class represents an email in a specified folder in Outlook.
-The __init__ method of this class takes in the outlook object, the name of the folder, and the subject of the email.
-The __init__ method then retrieves the specified folder from the outlook object, retrieves all messages in that folder, finds the last message with the specified subject, and retrieves its attachments.
-The _find_subfolder method recursively searches for a subfolder with the specified name.
-The _find_message_by_object_text method searches through all messages in the specified folder for a message with the specified subject.
-The print_attachments method prints out the titles of all attachments in the specified email.
-The script prompts the user for the folder name and email subject, creates an instance of the OutlookEmail class with these values, and then calls the print_attachments method on this instance.
+- The OutlookEmail class represents an email in a specified folder in Outlook.
+
+- The __init__ method of this class takes in the outlook object, the name of the folder, and the subject of the email.
+
+- The __init__ method then retrieves the specified folder from the outlook object, retrieves all messages in that folder, finds the last message with the 
+specified subject, and retrieves its attachments.
+
+- The _find_subfolder method recursively searches for a subfolder with the specified name.
+
+- The _find_message_by_object_text method searches through all messages in the specified folder for a message with the specified subject.
+
+- The print_attachments method prints out the titles of all attachments in the specified email.
+
+- The script prompts the user for the folder name and email subject, creates an instance of the OutlookEmail class with these values, and then calls the print_attachments method on this instance.
 
 
